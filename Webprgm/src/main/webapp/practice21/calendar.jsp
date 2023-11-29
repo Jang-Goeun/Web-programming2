@@ -10,10 +10,6 @@
 		<style>
 			form{width:1300px;}
 			table, td {border:1px solid black;}
-			p {display:inline-block; }
-			p.hrf1 {text-align:left;}
-			p.hrf2 {text-align:center;}
-			p.hrf3 {text-align:right;}
 			table {border-collapse:collapse; text-align:center;}
 			td {width:250px; height:50px;}
 			a {text-decoration: underline;}
@@ -54,19 +50,19 @@
 			int cnt = 0;
 		%>
 		<%
-			out.print("<p class=\"hrf1\"><a herf=\"calendar.jsp?YEAR=" + (year-1));
+			out.print("<a herf=\"calendar.jsp?YEAR=" + (year-1));
 			out.println("&MONTH=" + month + "\">" + "◀ </a>");
 			out.println(year + "년 ");
 			out.print("<a herf=\"calendar.jsp?YEAR=" + (year+1));
-			out.println("&MONTH=" + month + "\">" + "▶ </a></p>");
+			out.println("&MONTH=" + month + "\">" + "▶ </a>");
 
-			out.print("<p class=\"hrf2\"><a herf=\"calendar.jsp?YEAR=" + year);
+			out.print("<a herf=\"calendar.jsp?YEAR=" + year);
 			out.println("&MONTH=" + (month-1) + "\">" + "◀ </a>");
 			out.println((month+1) + "월 ");
 			out.print("<a herf=\"calendar.jsp?YEAR=" + year);
-			out.println("&MONTH=" + (month+1) + "\">" + "▶ </a></p>");
+			out.println("&MONTH=" + (month+1) + "\">" + "▶ </a>");
 			
-			out.println("<p class=\"hrf3\">" + presentYear + "-" + (presentMonth+1) + "-" + presentDay + "</p>");
+			out.println(presentYear + "-" + (presentMonth+1) + "-" + presentDay);
 			
 		%>
 		<table>
