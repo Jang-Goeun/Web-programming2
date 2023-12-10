@@ -25,7 +25,7 @@
 <body>
 	 <div align="center">
 		<img src="image/eclass_title.jpg">
-		<form name="frm2" method="post" action="Practice17.jsp">
+		<form name="frm2" method="post" action="Practice34.jsp">
 		    <table>
 		        <tr>
 		            <td colspan="2" class="color">회원가입</td>
@@ -46,8 +46,8 @@
 		        <tr>
 		            <td class="color">성별</td>
 		            <td>
-		                <input type="radio" name="gender" value="0">남
-		                <input type="radio" name="gender" value="1" checked>여
+		                <input type="radio" name="gender" value="남성">남
+		                <input type="radio" name="gender" value="여성" checked>여
 		            </td>
 		        </tr>
 		        <tr>
@@ -61,10 +61,10 @@
 		            <td class="color">휴대폰</td>
 		            <td>
 		                <select name="phone1" id="전화번호">
-		                    <option value="0">010</option>
-		                    <option value="1">011</option>
-		               		<option value="2">017</option>
-		               		<option value="3">070</option>
+		                    <option value="010">010</option>
+		                    <option value="011">011</option>
+		               		<option value="017">017</option>
+		               		<option value="070">070</option>
 			           </select>
 			           -
 			           <input name="phone2" size="4" maxlength="4"> 
@@ -87,11 +87,11 @@
 			   <tr>
 			       <td class="color">관심분야</td>
 			       <td>
-			           <input type="checkbox" name="hobby" value="0">뉴스
-			           <input type="checkbox" name="hobby" value="1" checked>맛집
-			           <input type="checkbox" name="hobby" value="2">책
-			           <input type="checkbox" name="hobby" value="3">영화
-			           <input type="checkbox" name="hobby" value="4">여행
+			           <input type="checkbox" name="hobby" value="뉴스">뉴스
+			           <input type="checkbox" name="hobby" value="맛집" checked>맛집
+			           <input type="checkbox" name="hobby" value="책">책
+			           <input type="checkbox" name="hobby" value="영화">영화
+			           <input type="checkbox" name="hobby" value="여행">여행
 			       </td>
 			   </tr>
 			   <tr>
