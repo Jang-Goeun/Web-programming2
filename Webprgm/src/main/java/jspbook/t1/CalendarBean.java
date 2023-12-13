@@ -48,6 +48,7 @@ public class CalendarBean {
 	public String getMONTH() {return MONTH;}
 	public int getYear() {return year;}
 	public int getMonth() {return month + 1;}
+	public int getMonth1() {return month;}
 	public int getPresentYear() {return presentYear;}
 	public int getPresentMonth() {return presentMonth + 1;}
 	public int getPresentDay() {return presentDay;}

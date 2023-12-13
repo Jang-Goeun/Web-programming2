@@ -28,9 +28,9 @@
 		<div>
 			<div id="d1">
 				<span id="s1">
-					<a href="calendar.jsp?YEAR=${calendar.prevYear}&MONTH=${calendar.month}">◀</a>
+					<a href="calendar.jsp?YEAR=${calendar.prevYear}&MONTH=${calendar.month1}">◀</a>
 					${calendar.year}년 
-					<a href="calendar.jsp?YEAR=${calendar.nextYear}&MONTH=${calendar.month}">▶</a>
+					<a href="calendar.jsp?YEAR=${calendar.nextYear}&MONTH=${calendar.month1}">▶</a>
 				 </span>
 				<span id="s2">
 					<a href="calendar.jsp?YEAR=${calendar.year}&MONTH=${calendar.prevMonth}">◀</a>
