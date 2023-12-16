@@ -1,4 +1,4 @@
-package jspbook.t1;
+package jspbook.t2;
 import java.util.Calendar;
 
 public class CalendarBean {
@@ -11,10 +11,10 @@ public class CalendarBean {
 	private int presentYear = today.get(Calendar.YEAR);
 	private int presentMonth = today.get(Calendar.MONTH);
 	private int presentDay = today.get(Calendar.DATE);
-
+	
 	private int year = cal.get(Calendar.YEAR);
 	private int month = cal.get(Calendar.MONTH);
-
+	
 	private int end;
 	private int startDay;
 	
@@ -36,11 +36,9 @@ public class CalendarBean {
 			this.MONTH = MONTH;
 			this.month = Integer.parseInt(MONTH);
 			if(this.month == 12) {
-				this.year += 1;
-				this.month = 0;
-			}else if(this.month == -1){
-				this.year -= 1;
 				this.month = 11;
+			}else if(this.month == -1){
+				this.month = 0;
 			}
 			cal.set(this.year, this.month, 1);
 			end = cal.getActualMaximum(Calendar.DAY_OF_MONTH);

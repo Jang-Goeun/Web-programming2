@@ -33,20 +33,17 @@
 				<td>성별</td>
 				<td>그룹</td>
 			</tr>
-			<c:choose>
-			    <c:when test="${addrmanager.getAddrcount() > 0}">
-			        <c:forEach var="i" begin="${addrmanager.getStartIndex()}" end="${addrmanager.getLastIndex()}">
-			            <jsp:setProperty name="addrmanager" property="list" value="${addrmanager.getList(i)}" />
-			            <tr>
-			                <td>${addrmanager.getList().getUsername()}</td>
-			                <td>${addrmanager.getList().getTel()}</td>
-			                <td>${addrmanager.getList().getEmail()}</td>
-			                <td>${addrmanager.getList().getGender()}</td>
-			                <td>${addrmanager.getList().getGroup()}</td>
-			            </tr>
-			        </c:forEach>
-			   	</c:when>
-			</c:choose>
+		    <c:if test="${addrmanager.getAddrcount() > 0}">
+		        <c:forEach var="i" begin="${addrmanager.getStartIndex()}" end="${addrmanager.getLastIndex()}">
+		            <tr>
+		                <td>${addrmanager.getList(i).getUsername()}</td>
+		                <td>${addrmanager.getList(i).getTel()}</td>
+		                <td>${addrmanager.getList(i).getEmail()}</td>
+		                <td>${addrmanager.getList(i).getGender()}</td>
+		                <td>${addrmanager.getList(i).getGroup()}</td>
+		            </tr>
+		        </c:forEach>
+		   	</c:if>
 		</table>
 		<c:forEach var="i" begin="1" end="${addrmanager.getAllpage()}">
 			<c:choose>
